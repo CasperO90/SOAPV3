@@ -1,6 +1,7 @@
 package SOAP;
 
 import DTO.FeedbackBatchDTO;
+import DTO.FeedbackDTO;
 import DTO.Virksomhed;
 import Firebase.EnumCollectionMapException;
 import Firebase.IFirebaseFacilitator;
@@ -10,6 +11,8 @@ import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 @WebService(endpointInterface = "SOAP.ISOAP")
@@ -37,7 +40,6 @@ public class SOAPImpl implements ISOAP {
     @Override
     public void setVote(int vote) {
 
-
     }
 
     @Override
@@ -47,6 +49,16 @@ public class SOAPImpl implements ISOAP {
 
     @Override
     public void givFeedback(FeedbackBatchDTO batchDTO) throws RemoteException, EnumCollectionMapException {
+
+    }
+
+    @Override
+    public void setCustomQuestions(List<String> questionsArray) throws EnumCollectionMapException, RemoteException {
+
+    }
+
+    @Override
+    public void setFeedback(ArrayList<FeedbackDTO> feedback) {
 
     }
 
