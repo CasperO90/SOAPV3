@@ -19,10 +19,10 @@ import java.util.concurrent.ExecutionException;
 public class SOAPKlient {
 
     public static void main(String[] args) throws MalformedURLException {
-        URL url = new URL("http://localhost:9901/feedbacktjeneste?wsdl");
-        QName qname = new QName("SOAP", "ImplService");
+        URL url = new URL("//http://[::]:9902/feedbacktjeneste?wsdl"); //http://localhost:9901/kontotjeneste?wsdl"
+        QName qname = new QName("//http://SOAP/", "SOAPImplService"); //http://kapitel_19_soap/
         Service service = Service.create(url, qname);
-        ISOAP feedback = service.getPort(ISOAP.class);
+        //ISOAP feedback = service.getPort(ISOAP.class);
 
 
         //Yoss klient

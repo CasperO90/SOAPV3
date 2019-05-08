@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 public class RMIImpl implements IFirebaseFacilitator {
+
     @Override
     public void init() throws IOException {
 

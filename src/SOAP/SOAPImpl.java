@@ -13,9 +13,10 @@ import java.rmi.RemoteException;
 import java.util.concurrent.ExecutionException;
 
 @WebService(endpointInterface = "SOAP.ISOAP")
+
 public class SOAPImpl implements ISOAP {
 
-     IFirebaseFacilitator rmitjeneste=(IFirebaseFacilitator) Naming.lookup("rmi://localhost:1617/Feedback-backend");
+     IFirebaseFacilitator rmitjeneste=(IFirebaseFacilitator) Naming.lookup("rmi://[::]:1617/Feedback-backend");
 
     public SOAPImpl() throws RemoteException, NotBoundException, MalformedURLException {
     }
