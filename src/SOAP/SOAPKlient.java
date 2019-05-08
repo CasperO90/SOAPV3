@@ -23,11 +23,12 @@ public class SOAPKlient {
         Service service = Service.create(url, qname);
         ISOAP feedback = service.getPort(ISOAP.class);
 
+        /*
         Virksomhed v = new Virksomhed();
         v = feedback.HentVirksomhedMedId(0);
         System.out.println(v.getNavn() + "Virksomheds ID" + v.getVirksomhedsID());
 
-
+*/
         Scanner in = new Scanner(System.in);
 
      System.out.println("Velkommen til SpinOff! \n Skriv: \n 1 for at oprette virksomhedsID \n 2 for at give feedback");
