@@ -1,6 +1,8 @@
 package SOAP;
 
+import DTO.FeedbackBatchDTO;
 import DTO.Virksomhed;
+import Firebase.EnumCollectionMapException;
 import Firebase.IFirebaseFacilitator;
 
 import javax.jws.WebService;
@@ -28,10 +30,12 @@ public class SOAPImpl implements ISOAP {
     @Override
     public void tilføjVirksomhed(int virksomhedsID, String navn) throws InterruptedException, RemoteException {
 
+
     }
 
     @Override
     public void setVote(int vote) {
+
 
     }
 
@@ -40,6 +44,10 @@ public class SOAPImpl implements ISOAP {
 
     }
 
+    @Override
+    public void givFeedback(FeedbackBatchDTO batchDTO) throws RemoteException, EnumCollectionMapException {
+
+    }
 
 
 }

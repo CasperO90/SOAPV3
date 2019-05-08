@@ -8,9 +8,15 @@ import java.rmi.RemoteException;
 public class SOAPServer {
 
     public static void main(String[] args) throws RemoteException, NotBoundException, MalformedURLException {
+
+
+
+
         System.out.println("publicerer feedbacktjeenste");
         SOAPImpl feedback = new SOAPImpl();
-        Endpoint.publish("http://[::]:9901/kontotjeneste", feedback);
+
+        Endpoint.publish("http://[::]:9901/feedbacktjeneste", feedback);
+
         System.out.println("Feedbacktjeneste publiceret");
     }
 

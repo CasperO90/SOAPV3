@@ -1,7 +1,9 @@
 package SOAP;
 
 
+import DTO.FeedbackBatchDTO;
 import DTO.Virksomhed;
+import Firebase.EnumCollectionMapException;
 
 import javax.jws.WebService;
 import javax.jws.WebMethod;
@@ -19,6 +21,8 @@ public interface ISOAP {
     @WebMethod void setVote(int vote);
 
     @WebMethod void setCommenet(String commenet);
+
+    @WebMethod void givFeedback(FeedbackBatchDTO batchDTO) throws RemoteException, EnumCollectionMapException;
 
 
 
