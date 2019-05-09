@@ -34,6 +34,8 @@ public class SOAPImpl implements ISOAP {
     @Override
     public void tilføjVirksomhed(int virksomhedsID, String navn) throws InterruptedException, RemoteException {
 
+        rmitjeneste.tilføjVirksomhed(virksomhedsID,navn);
+
 
     }
 
@@ -49,16 +51,19 @@ public class SOAPImpl implements ISOAP {
 
     @Override
     public void givFeedback(FeedbackBatchDTO batchDTO) throws RemoteException, EnumCollectionMapException {
-
+        rmitjeneste.givFeedback(batchDTO);
     }
 
     @Override
     public void setCustomQuestions(List<String> questionsArray) throws EnumCollectionMapException, RemoteException {
-
+        rmitjeneste.setCustomQuestions(questionsArray);
     }
 
     @Override
     public void setFeedback(ArrayList<FeedbackDTO> feedback) {
+
+
+
 
     }
 

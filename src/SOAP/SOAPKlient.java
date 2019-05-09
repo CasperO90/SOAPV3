@@ -31,7 +31,7 @@ public class SOAPKlient {
 */
         Scanner in = new Scanner(System.in);
 
-     System.out.println("Velkommen til SpinOff! \n Skriv: \n 1 for at oprette virksomhedsID \n 2 for at give feedback");
+     System.out.println("Velkommen til SpinOff! \n Skriv: \n 1 for at oprette virksomhedsID \n 2 for at oprette spørgsmål \n 3 for at give feedback");
     int next = in.nextInt();
         switch (next) {
 
